@@ -1,0 +1,197 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    padding: 0.313rem 0.938rem;
+    text-decoration: none;
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 1px;
+    margin: 0px 10px;
+}
+
+p{
+    font-size: 0.813rem;
+}
+
+img{
+    width: 100%;
+    height: 15.625rem; 
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c6c6c6;
+    border: 2px solid ;
+}
+
+#titulo{
+    width: 120px;
+    height: 150px
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 10px; 
+    transition: outline 0.3s;
+}
+
+#cabecalho a:hover{
+    outline: 1px solid #ee2211;
+}
+
+#conteudo-principal-um{
+    justify-content: center;
+    align-items: center;
+    max-width: 62.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 20px;
+}
+
+#conteudo-principal-dois{
+    justify-content: center;
+    align-items: center;
+    max-width: 62.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 20px;
+}
+
+#texto{
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 15px;
+    text-align: end;
+    height: 13.75rem;
+}
+
+#conteudo-principal::after{
+    content: "";
+    position: relative;
+    left: 480px;
+    bottom: 525px;
+    width: 40px;
+    height: 5px;
+    background-color: #ee2211;
+}
+#vermais{
+    background-color: #ee2211;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#vermais:hover{
+    background-color: #900;
+}
+
+#botao{
+    padding-top: 15px;
+}
+
+#vantagens{
+    background-image: url('./imagens/onda.svg');
+    background-color: #DDDD;
+    color: gray;
+    text-align: end;
+    font-size: 25px;
+    padding-right: 40px;
+    padding-top: 118px;
+}
+
+#descricao{
+    width: 100%;
+    background: #DDDD;
+    text-align: start;
+    height: 18.75rem;
+}
+
+.conteudo-descricao{
+    list-style-type: none;
+    position: relative;
+    padding: 0px 60px 0px 60px;
+    border-left: solid 5px #DDDD;
+}
+
+.conteudo-descricao:hover{
+    border-color: red;
+}
+
+#eletrica img{
+    position: absolute;
+    left: 30px;
+    top: -2px;
+    height: 20px;
+    width: 20px;
+}
+
+#velocidade img{
+    position: absolute;
+    left: 30px;
+    top: 73px;
+    height: 20px;
+    width: 20px;
+}
+
+#rastreador img{
+    position: absolute;
+    left: 30px;
+    top: -77px;
+    height: 20px;
+    width: 20px;
+}
+
+#direitos{
+    text-align: center;
+    background: #f7f7f7;
+    padding: 10px;
+    margin-top: 30px;
+    height: 100%;
+}
+
+/* Responsividade */
+
+@media (max-width: 1000px){
+    #vantagens{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #conteudo-principal-dois{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:600px){
+    #conteudo-principal-um{
+        grid-template-columns: 1fr;
+    }
+
+    #vantagens{
+        font-size: 2rem;
+    }
+    #texto{
+        text-align: start;
+    }
+}
+
+@media(max-width:400px){
+    #container p{
+        font-size: 1rem;
+    }
+
+    #vantagens{
+        font-size: 2rem;
+    }
+}
